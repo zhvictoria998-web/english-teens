@@ -216,11 +216,6 @@ document.getElementById('loadfile').addEventListener('change', (ev) => {
       const keys = JSON.parse(inp.dataset.key).map(norm);
       const right = keys.includes(norm(inp.value));
       inp.classList.toggle('right', right); inp.classList.toggle('wrong', !right);
-      let fix = inp.nextElementSibling && inp.nextElementSibling.classList.contains('fix') ? inp.nextElementSibling : null;
-      if (!right) {
-        if (!fix) { fix = document.createElement('span'); fix.className = 'fix'; inp.after(fix); }
-        fix.textContent = JSON.parse(inp.dataset.key)[0];
-      } else if (fix) fix.remove();
       if (right) ok++;
     });
     return [ok, inputs.length];
@@ -231,9 +226,6 @@ document.getElementById('loadfile').addEventListener('change', (ev) => {
       const built = [...b.querySelectorAll('.built .chip')].map(c => c.textContent).join(' ');
       const right = built.toLowerCase() === b.dataset.answer.toLowerCase();
       b.classList.toggle('right', right); b.classList.toggle('wrong', !right);
-      let fix = b.querySelector('.fix');
-      if (!right) { if (!fix) { fix = document.createElement('div'); fix.className = 'fix'; b.appendChild(fix); } fix.textContent = b.dataset.answer.replace(' ?', '?'); }
-      else if (fix) fix.remove();
       if (right) ok++;
     });
     return [ok, blocks.length];
