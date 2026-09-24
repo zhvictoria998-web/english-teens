@@ -7,7 +7,7 @@ https://zhvictoria998-web.github.io/english-teens/<file>.html as soon as it is p
 
 - `index.html` - Homework 1 (present simple vs past simple, back-to-school words). Use it as the template for every new homework.
 - `homework2.html`, `homework3.html`, ... - later homeworks. One self-contained file each, no external scripts.
-- `english-games.html` - NOT for the teen group: a phonics game page (build the word, listen and choose, missing letter, read and find) for a younger learner, kept in this repo only so it is reachable at the same Pages address. Its UI text is Russian and it uses the browser's speech synthesis.
+- `english-games.html`, `english-games-2.html` - NOT for the teen group: a phonics game page (build the word, listen and choose, missing letter, read and find) for a younger learner, kept in this repo only so it is reachable at the same Pages address. Its UI text is Russian and it uses the browser's speech synthesis.
 
 ## How to make a new homework
 
