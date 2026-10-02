@@ -9,6 +9,8 @@ https://zhvictoria998-web.github.io/english-teens/<file>.html as soon as it is p
 - `homework2.html`, `homework3.html`, ... - later homeworks. One self-contained file each, no external scripts.
 - `english-games.html`, `english-games-2.html` - NOT for the teen group: a phonics game page (build the word, listen and choose, missing letter, read and find) for a younger learner, kept in this repo only so it is reachable at the same Pages address. Its UI text is Russian and it uses the browser's speech synthesis.
 
+- `Lektion-NN.html` - NOT for the teen group either: the owner's own German lessons (Russian explanations), hosted here only for the public address.
+
 ## How to make a new homework
 
 1. Copy the structure of `index.html`: same CSS, same word bank block, same exercise sections, same summary block with "Copy my results for the teacher" and save/load progress. Change only the title, the subtitle line, the word bank and the exercises.
